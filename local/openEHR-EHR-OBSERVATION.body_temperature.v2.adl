@@ -1,4 +1,4 @@
-archetype (adl_version=1.4; uid=fbff84f3-2b33-4245-94f1-6dafe6679c54)
+archetype (adl_version=1.4; uid=8e81df19-9d49-43fb-a600-a9468ba57c5f)
 	openEHR-EHR-OBSERVATION.body_temperature.v2
 
 concept
@@ -136,16 +136,18 @@ Bitte beachten: Die Stelle und Methode der Messung muss ggf. dem Endverbraucher 
 
 Dieser Archetyp darf nicht verwendet werden, um die Temperatur eines Körperteils isoliert darzustellen, z. B. die Temperatur an der Fußsohle im Rahmen des Managements von chronischem Diabetes.">
 		>
-		["ru"] = <
-			language = <[ISO_639-1::ru]>
-			purpose = <"Для записи измеряемой температуры человека - в качестве суррогата температуры всего тела.">
-			keywords = <"температура","лихорадка","жар","гипертермия","гипотермия">
-			copyright = <"© openEHR Foundation">
-			use = <"Используется для записи температуры тела пациента или органа.
-Дополнительные кластеры могут быть включены для получения дополнительной информации о состоянии - в том числе условия внешней среды, фаза менструального цикла и другие детали, где это уместно.
-Обратите внимание: запись о месте и методе измерения  может потребоваться  для облегчения точной интерпретации регистрируемой температуры.">
-			misuse = <"Этот архетип не следует использовать для записи температуры любого другого объекта.
-Этот архетип не следует использовать для записи температуры части тела, например, отдельного измерения температуры ступни в лечении больных с диабетической стопой.">
+		["fi"] = <
+			language = <[ISO_639-1::fi]>
+			purpose = <"Henkilön lämpötilan mittaamista varten. ">
+			keywords = <"lämpötila, kuume, hypotermia, hypertermia", ...>
+			use = <"Yksilön lämpötilan kirjaamista varten.
+
+Lisäklustereita voidaan sisällyttää lisätietojen tallentamista varten, mukaan lukien ympäristöolosuhteet ja yksityiskohtaiset rasitustiedot.
+
+Huomio: Mittauspaikka ja mittaustapa voi olla hyödyllistä näyttää käyttäjälle lämpötilan tarkan tulkinnan helpottamiseksi.">
+			misuse = <"Tätä arkkityyppiä ei käytetä kuvaamaan minkään muun kohteen kuin potilaan lämpötilaa.
+
+Tätä arkkityyppiä ei käytetä kehon osan lämpötilan tallentamiseen erillään, esim. jalan pohjan lämpötila osana kroonista diabeteksen hoitoa.">
 		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
@@ -161,18 +163,16 @@ Observera: Platsen och mätmetoden kan behöva visas för slutanvändaren för a
 Ska inte användas för att mäta temperaturen av en isolerad kroppsdel, exempelvis temperaturen av fotsulan som en del i kronisk diabetesskötsel.
 ">
 		>
-		["fi"] = <
-			language = <[ISO_639-1::fi]>
-			purpose = <"Henkilön lämpötilan mittaamista varten. ">
-			keywords = <"lämpötila, kuume, hypotermia, hypertermia", ...>
-			use = <"Yksilön lämpötilan kirjaamista varten.
-
-Lisäklustereita voidaan sisällyttää lisätietojen tallentamista varten, mukaan lukien ympäristöolosuhteet ja yksityiskohtaiset rasitustiedot.
-
-Huomio: Mittauspaikka ja mittaustapa voi olla hyödyllistä näyttää käyttäjälle lämpötilan tarkan tulkinnan helpottamiseksi.">
-			misuse = <"Tätä arkkityyppiä ei käytetä kuvaamaan minkään muun kohteen kuin potilaan lämpötilaa.
-
-Tätä arkkityyppiä ei käytetä kehon osan lämpötilan tallentamiseen erillään, esim. jalan pohjan lämpötila osana kroonista diabeteksen hoitoa.">
+		["ru"] = <
+			language = <[ISO_639-1::ru]>
+			purpose = <"Для записи измеряемой температуры человека - в качестве суррогата температуры всего тела.">
+			keywords = <"температура","лихорадка","жар","гипертермия","гипотермия">
+			copyright = <"© openEHR Foundation">
+			use = <"Используется для записи температуры тела пациента или органа.
+Дополнительные кластеры могут быть включены для получения дополнительной информации о состоянии - в том числе условия внешней среды, фаза менструального цикла и другие детали, где это уместно.
+Обратите внимание: запись о месте и методе измерения  может потребоваться  для облегчения точной интерпретации регистрируемой температуры.">
+			misuse = <"Этот архетип не следует использовать для записи температуры любого другого объекта.
+Этот архетип не следует использовать для записи температуры части тела, например, отдельного измерения температуры ступни в лечении больных с диабетической стопой.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -185,17 +185,6 @@ Clusters adicionais podem ser incluídos para fornecer dados adicionais - inclui
 Observação: O local e método de gravação podem precisar ser exibidos ao usuário final para facilitar a interpretação exata da temperatura registrada.">
 			misuse = <"Esse arquétipo não pode ser usado para registrar a temperatura de qualquer outro objeto.
 Esse arquétipo não pode ser usado para registrar a temperatura de uma parte do corpo isoladamente, por exemplo, temperatura da sola do pé, como parte do controle de diabetes crônica.">
-		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل درجة الحرارة التي تم قياسها للشخص - كبديل عن درجة حرارة الجسم كله">
-			keywords = <"الحرارة","الجسم","اللُّب","الحمى","انخفاض الحرارة","فرط الحرارة">
-			copyright = <"© openEHR Foundation">
-			use = <"يستخدم لتسجيل حرارة جميع الجسم للشخص أو الجثة.
-يمكن تضمين عناقيد أخرى للإمداد بالمزيد من تفاصيل الحالة - بما في ذلك العوامل البيئية, تفاصيل الدورة الشهرية, تفاصيل المجهود, حيثما تطلب الأمر.
-الرجاء ملاحظة: قد يكون من الواجب عرض هذا الموقع و طريقة التسجيل للمستخدِم النهائي لتسهيل التفسير الدقيق للحرارة التي يتم تسجيلها.">
-			misuse = <"هذا النموذج لا يستخدم لتسجيل حرارة أي شيئ آخر.
-هذا النموذج لا يستخدم لتسجيل الحرارة لجزء معزول من الجسم, مثلا حرارة أخمص القدم كجزء من التدبير العلاجي لمرض السكري المزمن.">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -210,6 +199,17 @@ Please Note: The site and method of recording may need to be displayed to the en
 			misuse = <"This archetype is not to be used to record the temperature of any other object.
 
 This archetype is not to be used to record the temperature of a part of the body in isolation e.g. temperature of the sole of the foot as a part of chronic diabetes management.">
+		>
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل درجة الحرارة التي تم قياسها للشخص - كبديل عن درجة حرارة الجسم كله">
+			keywords = <"الحرارة","الجسم","اللُّب","الحمى","انخفاض الحرارة","فرط الحرارة">
+			copyright = <"© openEHR Foundation">
+			use = <"يستخدم لتسجيل حرارة جميع الجسم للشخص أو الجثة.
+يمكن تضمين عناقيد أخرى للإمداد بالمزيد من تفاصيل الحالة - بما في ذلك العوامل البيئية, تفاصيل الدورة الشهرية, تفاصيل المجهود, حيثما تطلب الأمر.
+الرجاء ملاحظة: قد يكون من الواجب عرض هذا الموقع و طريقة التسجيل للمستخدِم النهائي لتسهيل التفسير الدقيق للحرارة التي يتم تسجيلها.">
+			misuse = <"هذا النموذج لا يستخدم لتسجيل حرارة أي شيئ آخر.
+هذا النموذج لا يستخدم لتسجيل الحرارة لجزء معزول من الجسم, مثلا حرارة أخمص القدم كجزء من التدبير العلاجي لمرض السكري المزمن.">
 		>
 		["it"] = <
 			language = <[ISO_639-1::it]>
@@ -236,6 +236,17 @@ Tener en cuenta: El sitio y el método del registro quizás sea necesario mostra
 			misuse = <"Este arquetipo no debe usarse para registrar la temperatura de cualquier otro objeto.
 Este arquetipo no debe usarse para registrar la temperatura de una parte del cuerpo aislado por ej: la temperatura de la planta del pie como parte del manejo de la diabetes crónica.">
 		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Registrar la temperatura medida de una persona - como un derivado de la temperatura corporal">
+			keywords = <"temperatura","cuerpo","central","fiebre","hipotermia","hipertermia">
+			copyright = <"© openEHR Foundation">
+			use = <"Usar para registrar la temperatura corporal de una persona o cuerpo.
+Clusters adicionales pueden incluirse para proveer datos adicionales de estado - incluyendo condiciones ambientales, detalles del ciclo menstrual y de ejercicio físico, cuando se considera apropiado.
+Tener en cuenta: El sitio y el método del registro quizás sea necesario mostrarlo al usuario final, para la adecuada interpretación del registro de temperatura.">
+			misuse = <"Este arquetipo no debe usarse para registrar la temperatura de cualquier otro objeto.
+Este arquetipo no debe usarse para registrar la temperatura de una parte del cuerpo aislado por ej: la temperatura de la planta del pie como parte del manejo de la diabetes crónica.">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"Brukes til å registrere et individs målte kroppstemperatur, som uttrykk for kjernetemperaturen.">
@@ -247,17 +258,6 @@ Det kan legges til CLUSTERE for å tilføre tillegsinformasjon, inkludert miljø
 
 NB: Målemetode og -sted vil ofte måtte vises til sluttbruker for at de dokumenterte temperaturverdiene skal kunne tolkes korrekt.">
 			misuse = <"Arketypen skal ikke brukes til å registrere andre objekters eller en isolert kroppsdels temperatur f.eks. temperatur på fotsålen som en del av kronisk diabetesbehandling.">
-		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Registrar la temperatura medida de una persona - como un derivado de la temperatura corporal">
-			keywords = <"temperatura","cuerpo","central","fiebre","hipotermia","hipertermia">
-			copyright = <"© openEHR Foundation">
-			use = <"Usar para registrar la temperatura corporal de una persona o cuerpo.
-Clusters adicionales pueden incluirse para proveer datos adicionales de estado - incluyendo condiciones ambientales, detalles del ciclo menstrual y de ejercicio físico, cuando se considera apropiado.
-Tener en cuenta: El sitio y el método del registro quizás sea necesario mostrarlo al usuario final, para la adecuada interpretación del registro de temperatura.">
-			misuse = <"Este arquetipo no debe usarse para registrar la temperatura de cualquier otro objeto.
-Este arquetipo no debe usarse para registrar la temperatura de una parte del cuerpo aislado por ej: la temperatura de la planta del pie como parte del manejo de la diabetes crónica.">
 		>
 		["ja"] = <
 			language = <[ISO_639-1::ja]>
@@ -303,10 +303,10 @@ Dit archetype dient niet gebruikt te worden voor het vastleggen van de temperatu
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"93D7ADBBD994326C03BC2D9063553DFC">
-		["build_uid"] = <"0d2a0ea6-e0d5-406b-980d-14d583f7ca60">
+		["MD5-CAM-1.0.1"] = <"9C8B1DAB76432B26FB06DEA74B4AEA07">
+		["build_uid"] = <"8b8e5f73-e23c-4ea4-a8c5-c3c0218fbd27">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomedct or info@snomed.org.">
-		["revision"] = <"2.1.5">
+		["revision"] = <"2.1.0">
 	>
 
 definition
