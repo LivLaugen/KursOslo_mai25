@@ -1,3 +1,4 @@
+:toc:
 = Generell_Innkomstjurnal_KursOslo
 
 
@@ -824,4 +825,5 @@ a|
 |====
 // Not supported rmType CODE_PHRASE
 // Not supported rmType CODE_PHRASE
+
 // Not supported rmType PARTY_PROXY
